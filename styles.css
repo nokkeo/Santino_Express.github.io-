@@ -98,17 +98,70 @@ th {
 
 /* Media Query สำหรับหน้าจอเล็ก */
 @media screen and (max-width: 768px) {
+  /* ปรับขนาดของ input */
   input {
       width: 90%;
       font-size: 16px;
+      padding: 12px; /* ลด padding เพื่อให้ช่องกรอกมีขนาดที่เหมาะสม */
   }
-}
 
-@media screen and (max-width: 768px) {
+  /* ปรับขนาดของ td */
   td {
-      font-size: 14px; /* ลดขนาดฟอนต์ */
+      font-size: 14px;
   }
+
+  /* ปรับขนาดของ label */
   td:before {
-      font-size: 12px; /* ลดขนาด label */
+      font-size: 12px;
+  }
+
+  /* ปรับขนาด header */
+  header {
+      padding: 15px; /* ลดการ padding เพื่อให้ไม่เกินขอบหน้าจอ */
+      font-size: 18px; /* ลดขนาดฟอนต์ของ header */
+  }
+
+  /* ปรับขนาดของ table */
+  table {
+      font-size: 14px; /* ลดขนาดตัวอักษรในตาราง */
+  }
+
+  /* ปรับรูปแบบของ th */
+  th {
+      font-size: 16px; /* ลดขนาดฟอนต์ในส่วนหัวตาราง */
+      padding: 8px; /* ลดการ padding ของ th */
+  }
+
+  /* ปรับความกว้างของตาราง */
+  .table-container {
+      padding: 10px; /* เพิ่มระยะห่างภายใน */
+  }
+
+  /* ปรับขนาดของ footer */
+  footer {
+      font-size: 14px; /* ลดขนาดฟอนต์ใน footer */
+      padding: 8px; /* ลด padding ของ footer */
+  }
+
+  /* ปรับการจัดเรียงของเนื้อหาหลัก */
+  main {
+      padding: 15px; /* ลดการ padding ใน main */
+      max-width: 100%; /* ทำให้ main ยืดเต็มหน้าจอ */
+  }
+
+  /* ปรับขนาดของข้อความในข้อความพาดหัว */
+  h1, h2, h3 {
+      font-size: 20px; /* ลดขนาดฟอนต์ใน h1, h2, h3 */
+  }
+
+  /* ปรับการจัดเรียงในรูปแบบของตาราง */
+  .table-container {
+      overflow-x: auto;
+      -ms-overflow-style: none; /* ซ่อน scrollbar ใน IE/Edge */
+  }
+
+  /* ปรับระยะห่างระหว่างบรรทัด */
+  p {
+      line-height: 1.4; /* ปรับระยะห่างระหว่างบรรทัดให้เหมาะสม */
   }
 }
