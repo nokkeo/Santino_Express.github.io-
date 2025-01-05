@@ -80,18 +80,18 @@ input[type="text"] {
 }
 
 table {
-    width: 100%;
-    table-layout: auto; /* ปล่อยให้คอลัมน์ขยายตามเนื้อหา */
-    border-collapse: collapse;
-    margin: 20px 0;
-  }
+  width: 100%; 
+  table-layout: auto;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
 
-
-  td, th {
-    white-space: nowrap; /* ไม่ให้ข้อความตัดบรรทัด */
-    text-overflow: ellipsis; /* แสดง "..." ถ้าข้อความยาวเกิน */
-    overflow: hidden;
-  }
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+  word-break: break-word;
+}
 
 th {
   background-color: #f4f4f4;
