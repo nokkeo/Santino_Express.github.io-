@@ -94,10 +94,14 @@ input {
   text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
 }
 
+.table-container {
+  overflow-x: auto; /* ทำให้สามารถเลื่อนในแนวนอนได้ */
+  width: 100%; /* ให้ครอบคลุมพื้นที่ทั้งหมด */
+}
+
 table {
-  width: 80%; /* กำหนดความกว้างของตาราง */
-  border-collapse: collapse;
-  margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+  width: 100%; /* ตารางปรับขนาดตามหน้าจอ */
+  border-collapse: collapse; /* รวมเส้นขอบ */
 }
 
 th, td {
